@@ -17,7 +17,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: antiquewhite;
+    background-color: white;
+    background-image:url(mountains.jpg);
+    background-attachment: fixed;
+    background-position: center;
+   background-size: cover;
     display: grid;
     height: 100vh;
     place-items: center;
@@ -28,16 +32,14 @@ body{
     font-weight: 300;
     margin: 0;
     margin-bottom: 1.25rem;
-    color:white;
 }
 .link{
-    color: rgb(255, 208, 0);
+    color: gray;
     font-size: 0.9rem;
     margin: 10px 0;
     text-decoration: none;
 }
 .container{
-    background-color: aqua;
     height: var(--max-height);
     width: 100%;
     max-width: var(--max-width);
@@ -97,16 +99,18 @@ body{
     transform: translateX(-100%);
 }
 .overlay{
-    background-color: blueviolet;
+    
+   background-attachment: fixed;
+   background-position:center;
+   background-size: cover;
     height: 100%;
     width: 200%;
     left: -100%;
     position: relative;
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
-    
-
 }
+
 .container.right-panel-active .overlay{
     transform: translateX(50%);
 
@@ -124,6 +128,7 @@ body{
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
     width: 50%;
+    
 }
 .overlay--left{
 transform: translateX(-20%);
@@ -142,6 +147,7 @@ transform: translateX(-20%);
 
 .btn{
     background-color: blue;
+    background-image: linear-gradient(90deg, blue 0%, lightblue 74%);
 border-radius: 20px;
 color: white;
 cursor:pointer ;
@@ -165,7 +171,7 @@ transition: transform 80ms ease-in;
     outline: none;
 }
 .form{
-    background-color: blueviolet;
+    background-image: url(mountains.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +181,7 @@ transition: transform 80ms ease-in;
     text-align: center;
 }
 .input{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border: none;
     padding: 0.9rem 0.9rem;
     margin: 0.5rem 0;
